@@ -7,16 +7,13 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(
-            name: "LibTorchLite",
-            targets: ["LibTorchLite"]
-        )
+        .library(name: "LibTorchLite", targets: ["LibTorchLite"])
     ],
     targets: [
         .binaryTarget(
             name: "LibTorchLite",
-            url: "https://ossci-ios.s3.amazonaws.com/libtorch_lite_ios_1.13.0.zip",
-            checksum: "f8f596a88d9ef02db7304896f05c42e9dcbde23648c7f38e40e9598dd484a55c"
+            url: "https://github.com/keremu-pensa/libtorch-lite/releases/download/1.0.0/LibTorchLite.xcframework.zip",
+            checksum: "ad16e6020542987b02b2ef7d7c58bfb8e444482416740d15737f87e8a41d8c80"
         )
     ]
 )
